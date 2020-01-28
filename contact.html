@@ -1,91 +1,86 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-    <title>About me</title>
-    
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+<!doctype html>
+<html lang="en-us">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>About | Bee Pritchard</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  
 </head>
 
 <body>
-    <!-- create nav bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand text-black" href="index.html">Bee Pritchard</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" 
-                data-target="#navbarID" 
-                aria-controls="navbarID" 
-                aria-expanded="false" aria-label="Toggle navigation">
-        </button>
-        <div class="collapse navbar-collapse" id="navbarID">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">About</a>  
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="portfolio.html">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>  
-              </li>
-            </ul>
-        </div>
-    </nav>
 
+  <header id="masthead">
+    
+    <div class="container">
+      <a href="index.html" id="logo">Bee Pritchard</a>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="wrapper">
     <div id="main-container" class="container">
         <section class="main-section">
-            <h1>Contact</h1>
+            <p>Please use the form below if you have any questions or you have any suggestion.</p>
+            <p>Or directly mail me on 
+                <a href=mailto:beepritchard15@gmail.com?
+                subject="subject text">beepritchard15@gmail.com</a>
 
-            <form id="contact-form">
-                <ul>
-                    <li>
-                        <label for="name">Name</label>
-                        <input type="text" name="name" id="
-                        name" placeholder="John Smith"
-                        required="resuired">
-
-                    </li>
-                    <li>
-                        <label for="email">Email</label>
-                        <input type="text" name="email" id="
-                        email" placeholder="example@gmail.com"
-                        required="resuired">
+            </p>
+          <h3>Contact</h3>
     
-                    </li>
-                    <li>
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message"
-                        required="resuired"></textarea>
-                    </li>
-                </ul>
-                <input type="submit" name="submit">
-            </form>
-
+          <form id="contact-form">
+            <ul>
+              <li>
+                <label for="name">Your Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Full Name" required="required">
+              </li>
+              <li>
+                <label for="email">Your Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Email Address" required="required">
+              </li>
+              <li>
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" required="required"></textarea>
+              </li>
+            </ul>
+            <input type="submit">
+          </form>
         </section>
 
         <section class="sidebar">
             <div id="connect">
-                <h2>Connect with me</h2>
-                <img src="assets/images/github-64.png" class="social"
-                    alt="Github">
-                    <img src="assets/images/In-64.png" class="social"
-                    alt="LinkedIn">
+              <h3>Connect with Me</h3>
+    
+                <a href="https://github.com/beepritchard">
+                <img src="assets/images/GitHub-64.png" class="social" alt="Github"> 
+                </a>
+                <a href="https://www.linkedin.com/in/sirintorn-pritchard-2b8b80104">
+                <img src="assets/images/In-64.png" class="social" alt="LinkedIn">
+                </a>
             </div>
-        </section>  
-        
-        <div class="push"></div>              
+          </section>
+        <div class="push"></div>
     </div>
-     <!-- creating footer-- -->
 
-    <footer class="footer-copyright font-small blue pt-4">
-        <div class="footer-copyright text-center py-3">
-            <p>@2019 Copyright-Bee Pritchard</p> 
+    <footer>
+        <div class="container">
+          Copyright &copy Bee Pritchard
         </div>
-    </footer>
-</body>
-</html>
+      </footer>
+      
+    </body> 
+    </html>
